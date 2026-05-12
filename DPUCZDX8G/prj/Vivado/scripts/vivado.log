@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri May 16 15:56:54 2025
+# Process ID: 2314
+# Current directory: /home/jong/DPUCZDX8G/prj/Vivado/scripts
+# Command line: vivado -mode tcl -source trd_prj.tcl
+# Log file: /home/jong/DPUCZDX8G/prj/Vivado/scripts/vivado.log
+# Journal file: /home/jong/DPUCZDX8G/prj/Vivado/scripts/vivado.jou
+# Running On: wonjong, OS: Linux, CPU Frequency: 2995.199 MHz, CPU Physical cores: 10, Host memory: 8131 MB
+#-----------------------------------------------------------
+source trd_prj.tcl
+# set dict_prj  {}
+# dict set dict_prj dict_sys prj_name                  {KV260}
+# dict set dict_prj dict_sys prj_part                  {xck26-sfvc784-2LV-c}
+# dict set dict_prj dict_sys prj_board                 {KV260}
+# dict set dict_prj dict_sys bd_name                   top
+# dict set dict_prj dict_sys bd_ooc                    None
+# dict set dict_prj dict_param  DPU_CLK_MHz            {275}
+# dict set dict_prj dict_param  REG_CLK_MHz            {100}
+# dict set dict_prj dict_param  DPU_NUM                {1}
+# dict set dict_prj dict_param  DPU_ARCH               {4096}
+# dict set dict_prj dict_param  DPU_RAM_USAGE          {low}
+# dict set dict_prj dict_param  DPU_CHN_AUG_ENA        {1}
+# dict set dict_prj dict_param  DPU_CONV_RELU_TYPE     {3}
+# dict set dict_prj dict_param  DPU_ALU_PARALLEL_USER  {4}
+# dict set dict_prj dict_param  DPU_ALU_LEAKYRELU      {0}
+# dict set dict_prj dict_param  DPU_SFM_NUM            {0}
+# dict set dict_prj dict_param  DPU_SAXICLK_INDPD      {1}
+# dict set dict_prj dict_param  DPU_CLK_GATING_ENA     {1}
+# dict set dict_prj dict_param  DPU_DSP48_MAX_CASC_LEN {4}
+# dict set dict_prj dict_param  DPU_DSP48_USAGE        {high}
+# dict set dict_prj dict_param  DPU_URAM_PER_DPU       {50}
+# dict set dict_prj dict_sys work_dir                  [file dirname [file normalize [info script]]]
+# dict set dict_prj dict_sys tcl_base_dir              [dict get $dict_prj dict_sys work_dir]/base
+# source -notrace                                      [dict get $dict_prj dict_sys tcl_base_dir]/trd_bd.tcl
+# lib_flow
+[ENV] +------------------------+-----------------------------------------+
+[ENV] | NAME                   | VALUE                                   |
+[ENV] +------------------------+-----------------------------------------+
+[ENV] | ver_vivado             | 2022.2                                  |
+[ENV] | ver_date               | 2025.5.16                               |
+[ENV] | ver_bit                | 3                                       |
+[ENV] +------------------------+-----------------------------------------+
+[ENV] | pwd_dir                | /home/jong/DPUCZDX8G/prj/Vivado/scripts |
+[ENV] | prj_name               | KV260                                   |
+[ENV] | prj_part               | xck26-sfvc784-2LV-c                     |
+[ENV] +------------------------+-----------------------------------------+
+[ENV] | bd_ooc                 | None                                    |
+[ENV] | bd_path                | ./../srcs/top/top.bd                    |
+[ENV] | ip_ps_base             | ./base                                  |
+[ENV] +------------------------+-----------------------------------------+
+[ENV] | DPU_CLK_MHz            | 275                                     |
+[ENV] | REG_CLK_MHz            | 100                                     |
+[ENV] | DPU_NUM                | 1                                       |
+[ENV] | DPU_ARCH               | 4096                                    |
+[ENV] | DPU_RAM_USAGE          | low                                     |
+[ENV] | DPU_CHN_AUG_ENA        | 1                                       |
+[ENV] | DPU_CONV_RELU_TYPE     | 3                                       |
+[ENV] | DPU_ALU_PARALLEL_USER  | 4                                       |
+[ENV] | DPU_ALU_LEAKYRELU      | 0                                       |
+[ENV] | DPU_SFM_NUM            | 0                                       |
+[ENV] | DPU_SAXICLK_INDPD      | 1                                       |
+[ENV] | DPU_CLK_GATING_ENA     | 1                                       |
+[ENV] | DPU_DSP48_MAX_CASC_LEN | 4                                       |
+[ENV] | DPU_DSP48_USAGE        | high                                    |
+[ENV] | DPU_URAM_PER_DPU       | 50                                      |
+[ENV] | DPU_IP_FOLDER          | dpu                                     |
+[ENV] | HP_CLK_MHz             | 274                                     |
+[ENV] | DPU_HP_CC_EN           | 1                                       |
+[ENV] | DPU_HP_DATA_BW         | 128                                     |
+[ENV] | DPU_CONV_WP            | 1                                       |
+[ENV] | CN_STGY                | flat                                    |
+[ENV] | DPU_TIMESTAMP_ENA      | 1                                       |
+[ENV] | PIN_CLK_REG            | zynq_ultra_ps_e/pl_clk0                 |
+[ENV] | PIN_CLK_GHP            | zynq_ultra_ps_e/pl_clk1                 |
+[ENV] +------------------------+-----------------------------------------+
+[PRJ] The old project has been deleted!
+[PRJ] Creating project KV260...
+[PRJ] Successfully created project KV260!
+[BLK] Creating block design top...
+[BLK] Successfully created block design top!
+[BLK] Loading ip repository...
+[BLK] Successfully loaded ip repositories in ./../../../dpu_ip!
+[ADD] Adding files...
+[ADD] +-------------------------+
+[ADD] | constrs_1               |
+[ADD] +-------------------------+
+[ADD] | ./../constrs/pin.xdc    |
+[ADD] | ./../constrs/misc.xdc   |
+[ADD] | ./../constrs/timing.xdc |
+[ADD] | ./../constrs/debug.xdc  |
+[ADD] +-------------------------+
+[ADD] Successfully added all files into constrs_1 fileset!
+[BLK] Creating hierarchies...
+[BLK] Created hierarchy hier_dpu!
+[BLK] Created hierarchy hier_dpu/hier_dpu_clk!
+[BLK] Created hierarchy hier_dpu/hier_dpu_ghp!
+[BLK] Created hierarchy hier_dpu/hier_dpu_irq!
+[BLK] Successfully created all hierarchies!
+[BLK] Creating ips...
+[BLK] Loaded base tcl ./base
+[BLK] +-----------------------------------------+---------+
+[BLK] | PROPERTY                                | VALUE   |
+[BLK] +-----------------------------------------+---------+
+[BLK] | PSU__FPGA_PL0_ENABLE                    | 1       |
+[BLK] | PSU__CRL_APB__PL0_REF_CTRL__SRCSEL      | IOPLL   |
+[BLK] | PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ     | 100     |
+[BLK] | PSU__FPGA_PL1_ENABLE                    | 1       |
+[BLK] | PSU__CRL_APB__PL1_REF_CTRL__SRCSEL      | RPLL    |
+[BLK] | PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ     | 274     |
+[BLK] | PSU__FPGA_PL2_ENABLE                    | 0       |
+[BLK] | PSU__FPGA_PL3_ENABLE                    | 0       |
+[BLK] | PSU__USE__FABRIC__RST                   | 1       |
+[BLK] | PSU__NUM_FABRIC_RESETS                  | 1       |
+[BLK] | PSU__USE__M_AXI_GP2                     | 1       |
+[BLK] | PSU__MAXIGP2__DATA_WIDTH                | 32      |
+[BLK] | PSU__USE__S_AXI_GP2                     | 1       |
+[BLK] | PSU__SAXIGP2__DATA_WIDTH                | 128     |
+[BLK] | PSU__USE__S_AXI_GP3                     | 1       |
+[BLK] | PSU__SAXIGP3__DATA_WIDTH                | 128     |
+[BLK] | PSU__USE__S_AXI_GP6                     | 1       |
+[BLK] | PSU__SAXIGP6__DATA_WIDTH                | 32      |
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+[BLK] +-----------------------------------------+---------+
+[BLK] | PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ | 99.990005 |
+[BLK] | PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ | 269.973022 |
+[BLK] | PSU__CRL_APB__PL2_REF_CTRL__ACT_FREQMHZ | 100     |
+[BLK] | PSU__CRL_APB__PL3_REF_CTRL__ACT_FREQMHZ | 100     |
+[BLK] +-----------------------------------------+---------+
+[BLK] Successfully Created ip zynq_ultra_ps_e!
+[BLK] +-----------------------+-------+
+[BLK] | PROPERTY              | VALUE |
+[BLK] +-----------------------+-------+
+[BLK] | VER_DPU_NUM           | 1     |
+[BLK] | ARCH                  | 4096  |
+[BLK] | ARCH_IMG_BKGRP        | 2     |
+[BLK] | LOAD_AUGM             | 1     |
+[BLK] | CONV_RELU_ADDON       | 3     |
+[BLK] | ALU_PARALLEL_USER     | 4     |
+[BLK] | ALU_LEAKYRELU         | 0     |
+[BLK] | CONV_WR_PARALLEL      | 1     |
+[BLK] | SFM_ENA               | 0     |
+[BLK] | S_AXI_CLK_INDEPENDENT | 1     |
+[BLK] | CLK_GATING_ENA        | 1     |
+[BLK] | CONV_DSP_CASC_MAX     | 4     |
+[BLK] | CONV_DSP_ACCU_ENA     | 1     |
+[BLK] | URAM_N_USER           | 50    |
+[BLK] | TIMESTAMP_ENA         | 1     |
+[BLK] +-----------------------+-------+
+[BLK] Successfully Created ip hier_dpu/DPUCZDX8G!
+expected floating-point number but got "Unable to get value from speedsfile for keyword MM"
+ERROR: [IP_Flow 19-3476] Tcl error in create_gui procedure for BD Cell 'dpu_clk_wiz'. expected floating-point number but got "Unable to get value from speedsfile for keyword MM"
+ERROR: [IP_Flow 19-3428] Failed to create Customization object dpu_clk_wiz
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'top_dpu_clk_wiz_0'. Failed to customize IP instance 'top_dpu_clk_wiz_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name hier_dpu/hier_dpu_clk/dpu_clk_wiz .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+
+    while executing
+"create_bd_cell -type ip -vlnv $vlnv $path"
+    invoked from within
+"if {([dict exists $ip_info REF] != 0) && ([dict get $ip_info REF] != {})} {
+      create_bd_cell -type module -reference [dict get $ip_info REF] $path..."
+    ("dict for" body line 6)
+    invoked from within
+"dict for { ip_name ip_info } $dict_ip {
+    # create ip
+    set path          [dict get $ip_info PATH]
+    
+    # 
+    if {([dict exists $ip_info REF]..."
+    (procedure "lib_create_ips" line 3)
+    invoked from within
+"lib_create_ips    $dict_ip    "
+    invoked from within
+"if {[info exists dict_ip  ]} {  lib_create_ips    $dict_ip    }"
+    (body of "dict with")
+    invoked from within
+"dict with dict_prj {
+    if {[info exists dict_src ]} {  lib_add_files     {sources_1} $dict_src }
+    if {[info exists dict_xdc ]} {  lib_add_files  ..."
+    (procedure "lib_build_bd" line 62)
+    invoked from within
+"lib_build_bd"
+    (procedure "lib_flow" line 5)
+    invoked from within
+"lib_flow"
+    (file "trd_prj.tcl" line 68)
